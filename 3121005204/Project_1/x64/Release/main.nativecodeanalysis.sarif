@@ -98,510 +98,6 @@
           }
         },
         {
-          "ruleId": "C26451",
-          "message": {
-            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/软工/jackchen1349/3121005204/Project_1/src/main.cpp"
-                },
-                "region": {
-                  "startLine": 71,
-                  "startColumn": 24,
-                  "endLine": 71,
-                  "endColumn": 30
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "cosineSimilarity",
-                  "decoratedName": "?cosineSimilarity@@YANAEBV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@0@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26451",
-          "message": {
-            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/软工/jackchen1349/3121005204/Project_1/src/main.cpp"
-                },
-                "region": {
-                  "startLine": 72,
-                  "startColumn": 24,
-                  "endLine": 72,
-                  "endColumn": 30
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "cosineSimilarity",
-                  "decoratedName": "?cosineSimilarity@@YANAEBV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@0@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26451",
-          "message": {
-            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/软工/jackchen1349/3121005204/Project_1/src/main.cpp"
-                },
-                "region": {
-                  "startLine": 73,
-                  "startColumn": 24,
-                  "endLine": 73,
-                  "endColumn": 30
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "cosineSimilarity",
-                  "decoratedName": "?cosineSimilarity@@YANAEBV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@0@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C6387",
-          "message": {
-            "text": "\"ptr_\" 可以是 \"0\"。"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/软工/jackchen1349/3121005204/Project_1/src/cppjieba/limonp/LocalVector.hpp"
-                },
-                "region": {
-                  "startLine": 95,
-                  "startColumn": 5,
-                  "endLine": 95,
-                  "endColumn": 55
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "limonp::LocalVector<unsigned int>::reserve",
-                  "decoratedName": "?reserve@?$LocalVector@I@limonp@@QEAAX_K@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ],
-          "codeFlows": [
-            {
-              "threadFlows": [
-                {
-                  "locations": [
-                    {
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/软工/jackchen1349/3121005204/Project_1/src/cppjieba/limonp/LocalVector.hpp"
-                          },
-                          "region": {
-                            "startLine": 88,
-                            "startColumn": 13
-                          }
-                        },
-                        "message": {
-                          "text": "跳过此分支(假定“size<=capacity_”为 false)"
-                        }
-                      },
-                      "kinds": [
-                        "branch"
-                      ],
-                      "importance": "important"
-                    },
-                    {
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/软工/jackchen1349/3121005204/Project_1/src/cppjieba/limonp/LocalVector.hpp"
-                          },
-                          "region": {
-                            "startLine": 91,
-                            "startColumn": 9
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/软工/jackchen1349/3121005204/Project_1/src/cppjieba/limonp/LocalVector.hpp"
-                          },
-                          "region": {
-                            "startLine": 93,
-                            "startColumn": 9
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/软工/jackchen1349/3121005204/Project_1/src/cppjieba/limonp/LocalVector.hpp"
-                          },
-                          "region": {
-                            "startLine": 94,
-                            "startColumn": 10
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/软工/jackchen1349/3121005204/Project_1/src/cppjieba/limonp/LocalVector.hpp"
-                          },
-                          "region": {
-                            "startLine": 95,
-                            "startColumn": 11
-                          }
-                        },
-                        "message": {
-                          "text": "“ptr_”是“memcpy”中的输出(在 c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.33.31629\\include\\vcruntime_string.h:43 处声明)"
-                        }
-                      },
-                      "kinds": [
-                        "declaration"
-                      ],
-                      "importance": "important"
-                    },
-                    {
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/软工/jackchen1349/3121005204/Project_1/src/cppjieba/limonp/LocalVector.hpp"
-                          },
-                          "region": {
-                            "startLine": 95,
-                            "startColumn": 11
-                          }
-                        },
-                        "message": {
-                          "text": "“ptr_”不应为 NULL，因为这与“memcpy”上的 SAL 批注不一致"
-                        }
-                      },
-                      "kinds": [
-                        "usage"
-                      ],
-                      "importance": "essential"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C6387",
-          "message": {
-            "text": "\"ptr_\" 可以是 \"0\"。"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/软工/jackchen1349/3121005204/Project_1/src/cppjieba/limonp/LocalVector.hpp"
-                },
-                "region": {
-                  "startLine": 95,
-                  "startColumn": 5,
-                  "endLine": 95,
-                  "endColumn": 55
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "limonp::LocalVector<cppjieba::RuneStr>::reserve",
-                  "decoratedName": "?reserve@?$LocalVector@URuneStr@cppjieba@@@limonp@@QEAAX_K@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ],
-          "codeFlows": [
-            {
-              "threadFlows": [
-                {
-                  "locations": [
-                    {
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/软工/jackchen1349/3121005204/Project_1/src/cppjieba/limonp/LocalVector.hpp"
-                          },
-                          "region": {
-                            "startLine": 88,
-                            "startColumn": 13
-                          }
-                        },
-                        "message": {
-                          "text": "跳过此分支(假定“size<=capacity_”为 false)"
-                        }
-                      },
-                      "kinds": [
-                        "branch"
-                      ],
-                      "importance": "important"
-                    },
-                    {
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/软工/jackchen1349/3121005204/Project_1/src/cppjieba/limonp/LocalVector.hpp"
-                          },
-                          "region": {
-                            "startLine": 91,
-                            "startColumn": 9
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/软工/jackchen1349/3121005204/Project_1/src/cppjieba/limonp/LocalVector.hpp"
-                          },
-                          "region": {
-                            "startLine": 93,
-                            "startColumn": 9
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/软工/jackchen1349/3121005204/Project_1/src/cppjieba/limonp/LocalVector.hpp"
-                          },
-                          "region": {
-                            "startLine": 94,
-                            "startColumn": 10
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/软工/jackchen1349/3121005204/Project_1/src/cppjieba/limonp/LocalVector.hpp"
-                          },
-                          "region": {
-                            "startLine": 95,
-                            "startColumn": 11
-                          }
-                        },
-                        "message": {
-                          "text": "“ptr_”是“memcpy”中的输出(在 c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.33.31629\\include\\vcruntime_string.h:43 处声明)"
-                        }
-                      },
-                      "kinds": [
-                        "declaration"
-                      ],
-                      "importance": "important"
-                    },
-                    {
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/软工/jackchen1349/3121005204/Project_1/src/cppjieba/limonp/LocalVector.hpp"
-                          },
-                          "region": {
-                            "startLine": 95,
-                            "startColumn": 11
-                          }
-                        },
-                        "message": {
-                          "text": "“ptr_”不应为 NULL，因为这与“memcpy”上的 SAL 批注不一致"
-                        }
-                      },
-                      "kinds": [
-                        "usage"
-                      ],
-                      "importance": "essential"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C6387",
-          "message": {
-            "text": "\"ptr_\" 可以是 \"0\"。"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/软工/jackchen1349/3121005204/Project_1/src/cppjieba/limonp/LocalVector.hpp"
-                },
-                "region": {
-                  "startLine": 95,
-                  "startColumn": 5,
-                  "endLine": 95,
-                  "endColumn": 55
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "limonp::LocalVector<std::pair<unsigned __int64,cppjieba::DictUnit const *> >::reserve",
-                  "decoratedName": "?reserve@?$LocalVector@U?$pair@_KPEBUDictUnit@cppjieba@@@std@@@limonp@@QEAAX_K@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ],
-          "codeFlows": [
-            {
-              "threadFlows": [
-                {
-                  "locations": [
-                    {
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/软工/jackchen1349/3121005204/Project_1/src/cppjieba/limonp/LocalVector.hpp"
-                          },
-                          "region": {
-                            "startLine": 88,
-                            "startColumn": 13
-                          }
-                        },
-                        "message": {
-                          "text": "跳过此分支(假定“size<=capacity_”为 false)"
-                        }
-                      },
-                      "kinds": [
-                        "branch"
-                      ],
-                      "importance": "important"
-                    },
-                    {
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/软工/jackchen1349/3121005204/Project_1/src/cppjieba/limonp/LocalVector.hpp"
-                          },
-                          "region": {
-                            "startLine": 91,
-                            "startColumn": 9
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/软工/jackchen1349/3121005204/Project_1/src/cppjieba/limonp/LocalVector.hpp"
-                          },
-                          "region": {
-                            "startLine": 93,
-                            "startColumn": 9
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/软工/jackchen1349/3121005204/Project_1/src/cppjieba/limonp/LocalVector.hpp"
-                          },
-                          "region": {
-                            "startLine": 94,
-                            "startColumn": 10
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/软工/jackchen1349/3121005204/Project_1/src/cppjieba/limonp/LocalVector.hpp"
-                          },
-                          "region": {
-                            "startLine": 95,
-                            "startColumn": 11
-                          }
-                        },
-                        "message": {
-                          "text": "“ptr_”是“memcpy”中的输出(在 c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.33.31629\\include\\vcruntime_string.h:43 处声明)"
-                        }
-                      },
-                      "kinds": [
-                        "declaration"
-                      ],
-                      "importance": "important"
-                    },
-                    {
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/软工/jackchen1349/3121005204/Project_1/src/cppjieba/limonp/LocalVector.hpp"
-                          },
-                          "region": {
-                            "startLine": 95,
-                            "startColumn": 11
-                          }
-                        },
-                        "message": {
-                          "text": "“ptr_”不应为 NULL，因为这与“memcpy”上的 SAL 批注不一致"
-                        }
-                      },
-                      "kinds": [
-                        "usage"
-                      ],
-                      "importance": "essential"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
           "ruleId": "C6387",
           "message": {
             "text": "\"ptr_\" 可以是 \"0\"。"
@@ -756,9 +252,9 @@
           ]
         },
         {
-          "ruleId": "C26495",
+          "ruleId": "C6387",
           "message": {
-            "text": "未初始化变量 cppjieba::KeywordExtractor::Word::weight。始终初始化成员变量(type.6)。"
+            "text": "\"_Param_(1)\" 可以是 \"0\"。"
           },
           "locations": [
             {
@@ -767,10 +263,10 @@
                   "uri": "file:///D:/软工/jackchen1349/3121005204/Project_1/src/cppjieba/KeywordExtractor.hpp"
                 },
                 "region": {
-                  "startLine": 20,
-                  "startColumn": 3,
-                  "endLine": 20,
-                  "endColumn": 3
+                  "startLine": 17,
+                  "startColumn": 19,
+                  "endLine": 17,
+                  "endColumn": 19
                 }
               },
               "logicalLocations": [
@@ -782,9 +278,30 @@
               ]
             }
           ],
-          "properties": {
-            "targetSymbol": "cppjieba::KeywordExtractor::Word::weight"
-          }
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/软工/jackchen1349/3121005204/Project_1/src/cppjieba/KeywordExtractor.hpp"
+                          },
+                          "region": {
+                            "startLine": 17,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         {
           "ruleId": "C6387",
@@ -979,25 +496,13 @@
         },
         {
           "location": {
-            "uri": "file:///D:/软工/jackchen1349/3121005204/Project_1/src/main.cpp"
-          },
-          "roles": [
-            "analysisTarget",
-            "resultFile"
-          ],
-          "hashes": {
-            "sha-256": "65962e72067551cccc1cea24598708db17a19966fbbc6b1ddb948f573b2c104d"
-          }
-        },
-        {
-          "location": {
             "uri": "file:///D:/软工/jackchen1349/3121005204/Project_1/src/cppjieba/limonp/LocalVector.hpp"
           },
           "roles": [
             "resultFile"
           ],
           "hashes": {
-            "sha-256": "3fc990619bd29da8a3307153cb4fe5fb15bc14c49a794bb65334e5a6644fd43d"
+            "sha-256": "8e1c7428947ef0f34bf96dfd15bed267c888ece0190aadef1ae68f9367bc6242"
           }
         },
         {
@@ -1008,7 +513,18 @@
             "resultFile"
           ],
           "hashes": {
-            "sha-256": "4a200b069c2260d71f6afb6eebc8df0383e306b9468f9ad7a1a3a4a975d7985a"
+            "sha-256": "26cc9d8ab20a70b53cb817a5d5dc75f5911b597deb2070f0d01e9f96a3f99763"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/软工/jackchen1349/3121005204/project_1/src/main.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "fa333ed0a68cb195495485103ad584aa4c44f90f3b1fed3c908888ca5029e38f"
           }
         },
         {

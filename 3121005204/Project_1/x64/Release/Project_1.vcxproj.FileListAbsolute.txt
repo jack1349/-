@@ -1,3 +1,1 @@
 D:\软工\jackchen1349\3121005204\Project_1\x64\Release\main.exe
-D:\软工\jackchen1349\3121005204\Project_1\x64\Release\main.exe.lastcodeanalysissucceeded
-D:\软工\jackchen1349\3121005204\Project_1\x64\Release\NativeCodeAnalysis.read.1.tlog

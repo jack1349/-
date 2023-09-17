@@ -59,7 +59,7 @@ class LocalVector {
       ptr_ = buffer_;
     } else {
       ptr_ = (T*) malloc(vec.capacity() * sizeof(T));
-      assert(ptr_);
+      assert(ptr_ != NULL);
       memcpy(static_cast<void*>(ptr_), vec.ptr_, vec.size() * sizeof(T));
     }
     return *this;
