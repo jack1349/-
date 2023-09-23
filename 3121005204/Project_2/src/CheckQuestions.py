@@ -57,6 +57,18 @@ def check_questions(args):
                 wrong.append(index + 1)
         except ZeroDivisionError:
             print(f'第{index + 1}题 error\n')
+        except (SyntaxError, NameError):
+            print(f"第{index + 1}题运算表达式错误\n")
 
-    print(f"\nCorrect: {len(correct)} ({', '.join(str(num) for num in correct)})")
-    print(f"\nWrong: {len(wrong)} ({', '.join(str(num) for num in wrong)})")
+    try:
+        with open("../file/Grade.txt", "w") as a_file:
+            result = f"Correct: {len(correct)} ({', '.join(str(num) for num in correct)})"
+            a_file.write(str(result) + "\n")
+            result = f"Wrong: {len(wrong)} ({', '.join(str(num) for num in wrong)})"
+            a_file.write(str(result))
+    except FileNotFoundError:
+        print(f"Error: The file ../file/Grade.txt was not found.")
+        return None
+    except Exception as e:
+        print(f"An error occurred: {str(e)}")
+        return None
