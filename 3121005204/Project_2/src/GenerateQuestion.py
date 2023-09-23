@@ -4,7 +4,10 @@ from fractions import Fraction
 
 def generate_operand(args):
     # 生成一个随机数，包括真分数的分子和分母
-    operand = Fraction(random.randint(1, args.range), random.randint(1, args.range))
+    if random.random() < 0.5:
+        operand = random.randint(1, args.range)
+    else:
+        operand = Fraction(random.randint(1, args.range), random.randint(1, args.range))
     return operand
 
 
@@ -15,18 +18,24 @@ def generate_expression(args):
     # 随机选择运算符数量，最多不超过3个
     num_operators = random.randint(1, 3)
 
-    for _ in range(num_operators):
+    for i in range(num_operators):
         # 随机选择运算符
         operator = random.choice(['+', '-', '*', '/'])
 
         # 生成下一个操作数
         operand = generate_operand(args)
 
-        # 随机决定是否加括号
-        if random.random() < 0.3:
-            expression = f"({expression}) {operator} {operand}"
-        else:
+        if i == 0:
             expression = f"{expression} {operator} {operand}"
+        else:
+            # 随机决定是否加括号
+            if random.random() < 0.5:
+                if i == num_operators - 1 or random.random() < 0.5:
+                    expression = f"({expression}) {operator} {operand}"
+                else:
+                    expression = f"({expression} {operator} {operand})"
+            else:
+                expression = f"{expression} {operator} {operand}"
 
     return expression
 
@@ -37,7 +46,7 @@ def generate_question(args, generated_questions):
         expression = generate_expression(args)
 
         # 构建题目字符串
-        question = f"{expression} = ?"
+        question = expression
 
         # 如果题目已经生成过，重新生成
         if question not in generated_questions:
